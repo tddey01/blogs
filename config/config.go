@@ -25,7 +25,7 @@ func reloadConfig( () {
 		if conf != nil {
 			host, _ := conf.GetValue("main", "host")
 			port, _ := conf.GetValue("main", "port")
-			loglevel, _ := conf.GetValue("main", "logLevel")
+			loglevel, _ := conf.GetValue("main", "log_level")
 
 			NiConfig.host = host
 			NiConfig.port = port
