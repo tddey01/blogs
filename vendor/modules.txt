@@ -1,6 +1,9 @@
 # github.com/Unknwon/goconfig v0.0.0-20191126170842-860a72fb44fd
 ## explicit
 github.com/Unknwon/goconfig
+# github.com/dchest/captcha v0.0.0-20170622155422-6a29415a8364
+## explicit
+github.com/dchest/captcha
 # github.com/gin-contrib/sse v0.1.0
 github.com/gin-contrib/sse
 # github.com/gin-gonic/gin v1.6.3
@@ -25,10 +28,18 @@ github.com/json-iterator/go
 github.com/leodido/go-urn
 # github.com/mattn/go-isatty v0.0.12
 github.com/mattn/go-isatty
+# github.com/meission/log4go v0.0.0-20170627153152-3baf5e0c10dc
+## explicit
+github.com/meission/log4go
 # github.com/modern-go/concurrent v0.0.0-20180228061459-e0a39a4cb421
 github.com/modern-go/concurrent
 # github.com/modern-go/reflect2 v0.0.0-20180701023420-4b7aa43c6742
 github.com/modern-go/reflect2
+# github.com/smartystreets/goconvey v1.6.4
+## explicit
+# github.com/studygolang/sander v0.0.0-20190307115815-134a4a713a09
+## explicit
+github.com/studygolang/sander/logger
 # github.com/ugorji/go/codec v1.1.7
 github.com/ugorji/go/codec
 # golang.org/x/sys v0.0.0-20200116001909-b77594299b42
