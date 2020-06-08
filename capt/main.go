@@ -105,12 +105,15 @@
 package main
 
 import (
+	"encoding/gob"
 	"errors"
 	"net/http"
 	"time"
 
 	"github.com/dgrijalva/jwt-go"
 	"github.com/gin-contrib/cors"
+	_ "github.com/gin-contrib/sessions"
+	_ "github.com/gin-contrib/sessions/cookie"
 	"github.com/gin-gonic/gin"
 )
 
@@ -184,6 +187,7 @@ func jwtAuth(ctx *gin.Context) {
 }
 
 func main() {
+	gob.Register(User{})
 	router := gin.Default()
 	//在web开发中，浏览器处于安全考虑会限制跨域请求。
 	//我们采用前后端分离的方式写接口的时候服务器端要允许跨域请求
@@ -214,8 +218,6 @@ func main() {
 	})
 	router.Run()
 }
-
-
 
 // curl --location --request GET 'http://127.0.0.1:8080/user' \
 // --header 'token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1ODM2NzQ2MzEsImlhdCI6MTU4MzY3MTAzMSwiVXNlciI6eyJJZCI6MSwiTmFtZSI6Imhhbnl1biJ9fQ.kMmE3DWXvNOUVsuHWgrlbm2pbsOHmbMtyr-V6hVjQ4s'
